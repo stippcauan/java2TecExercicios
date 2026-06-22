@@ -1,13 +1,23 @@
-public class Exercicio3 {
+import java.util.Scanner;
+
+public class Exercicio4 {
     public static void main(String[] args) {
 
-        let = sinal
+            Scanner scanner = new Scanner(System.in);
 
-        if (sinal === verde) {
-            System.out.println("Siga!");
-        } else if(sinal === amarelo) {
-            System.out.println("Atenção");
-        } 
+            System.out.println("Digite a cor do semáfaro");
+            String cor = scanner.nextLine();
 
+            String corMaiscula = cor.toUpperCase();
 
-}        
+            if (corMaiscula.equals("VERMELHO")) {
+                System.out.println("Pare o carro");
+
+            } else if (corMaiscula.equals("AMARELO")){
+                System.out.println("Cuidado");
+
+            } else {
+                System.out.println("Siga em Frente");
+            }
+        }
+}
